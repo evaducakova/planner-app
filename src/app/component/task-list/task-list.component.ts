@@ -10,16 +10,10 @@ export class TaskListComponent {
   tasks: Task[] = [];
 
   constructor(private taskService: TaskService) {
-    this.tasks = this.sortByPriority(this.taskService.getTasks());
+    this.tasks = this.taskService.getTasks();
   }
 
   public removeTaskFromList(id: number): void {
     this.tasks = this.tasks.filter((task: Task) => task.id !== id);
-  }
-
-  private sortByPriority(tasks: Task[]): Task[] {
-    return tasks.sort((a: Task, b: Task) => {
-      return ((a.priority) - (b.priority));
-    });
   }
 }
