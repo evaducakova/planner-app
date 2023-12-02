@@ -1,0 +1,16 @@
+.expansion-panel {
+  margin-bottom: 8px;
+}
+
+.panel-content {
+  display: flex;
+
+  span:first-child {
+    width: 15rem;
+  }
+
+  span:last-child {
+    width: 10rem;
+    margin-left: 3px;
+  }
+}

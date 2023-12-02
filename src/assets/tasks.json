@@ -1,0 +1,38 @@
+[{
+  "id": 1,
+  "title": "Complete Presentation Slides",
+  "description": "Prepare slides for the upcoming meeting",
+  "deadline": "2023-12-15",
+  "assignedPerson": {"name": "John", "surname": "Doe"},
+  "priority": 4
+},
+{
+  "id": 2,
+  "title": "Review Quarterly Reports",
+  "description": "Check and analyze financial reports for Q4",
+  "deadline": "2023-12-20",
+  "assignedPerson": {"name": "Jane", "surname": "Smith"},
+  "priority": 5
+},
+{
+  "id": 3,
+  "title": "Develop New Feature",
+  "description": "Implement the 'To-Do List' feature in the app",
+  "deadline": "2023-12-31",
+  "assignedPerson": {"name": "Alex", "surname": "Johnson"},
+  "priority": 2
+},
+{
+  "id": 4,
+  "title": "Plan Marketing Campaign",
+  "description": "Create strategies for the upcoming marketing campaign",
+  "priority": 3
+},
+{
+  "id": 5,
+  "title": "Organize Team Building Event",
+  "description": "Coordinate activities for the team building event",
+  "deadline": "2024-01-05",
+  "assignedPerson": {"name": "Chris", "surname": "Wilson"},
+  "priority": 1
+}]

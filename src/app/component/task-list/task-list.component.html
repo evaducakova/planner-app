@@ -1,0 +1,8 @@
+<mat-accordion>
+  <ng-container *ngFor="let task of tasks">
+    <app-task
+    [task]="task"
+    (taskCompleted)="removeTaskFromList($event)"
+    ></app-task>
+  </ng-container>
+</mat-accordion>

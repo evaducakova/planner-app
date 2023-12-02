@@ -1,0 +1,27 @@
+<mat-expansion-panel
+  (opened)="panelOpenState = true"
+  (closed)="panelOpenState = false"
+  class="expansion-panel"
+>
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      {{ task?.title }}
+    </mat-panel-title>
+    <mat-panel-description>
+      {{ task?.description }}
+    </mat-panel-description>
+  </mat-expansion-panel-header>
+
+  <div *ngIf="task?.deadline" class="panel-content">
+    <span>Deadline</span>
+    <span>{{ task?.deadline | date : "mediumDate" }}</span>
+  </div>
+  <div *ngIf="task?.assignedPerson" class="panel-content">
+    <span>Assigned Person</span>
+    <span>{{ task?.assignedPerson?.name }} {{ task?.assignedPerson?.surname }}</span>
+  </div>
+
+  <mat-action-row>
+    <mat-checkbox (change)="completeTask($event.checked)"></mat-checkbox>
+  </mat-action-row>
+</mat-expansion-panel>
